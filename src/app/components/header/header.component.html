@@ -2,5 +2,5 @@
   <a id="site" routerLink='/'>News</a>
 </div>
 <div id="nav-bar">
-  <a *ngFor="let cat of categories" [routerLink]="cat">{{cat}}</a>
+  <a *ngFor="let cat of categories" [routerLink]="cat.category">{{cat.display}}</a>
 </div>

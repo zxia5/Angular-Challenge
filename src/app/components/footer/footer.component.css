@@ -5,7 +5,8 @@
   background-color: black;
   color: white;
 }
-#footer h4 {
+#footer h4,
+#footer p {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
