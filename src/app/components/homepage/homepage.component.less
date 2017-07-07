@@ -1,0 +1,35 @@
+@import '../../../fonts';
+
+ngb-carousel {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  outline: none;
+
+  p {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  div {
+    background-color: rgba(0,0,0,0.4);
+  }
+}
+
+h1 {
+  margin: 20px;
+  font-family: @paragraph;
+}
+
+.card-small-box {
+  margin-bottom: 15px;
+}

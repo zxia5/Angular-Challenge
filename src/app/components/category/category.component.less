@@ -1,0 +1,45 @@
+@import '../../../fonts';
+
+.category-filter {
+  height:84px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 20px;
+  font-family: @paragraph;
+  display: inline-block;
+}
+
+.d-inline-block {
+  float: right;
+  margin:25px 25px 0 0;
+
+  .btn-outline-primary {
+    color: black;
+    background-color: transparent;
+    border-color: black;
+    box-shadow: none;
+
+    &:hover {
+      color: white;
+      background-color: black;
+      cursor: pointer;
+    }
+  }
+
+  .dropdown-item {
+    &:active, &:focus {
+      color: white;
+      background-color: black;
+      outline: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.card-small-box {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Work+Sans:900');
+#banner {
+  height: 80px;
+  position: relative;
+  margin-bottom: 10px;
+}
+#banner > a {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 50px;
+  cursor: pointer;
+  color: #ff4b4b;
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+}
+#nav-bar {
+  background-color: black;
+  height: 40px;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  justify-content: space-around;
+  display: flex;
+}
+#nav-bar a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  height: 100%;
+  line-height: 2.5;
+  cursor: pointer;
+}
+#nav-bar a:hover {
+  background-color: white;
+  color: black;
+}

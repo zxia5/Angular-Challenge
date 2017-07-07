@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Work+Sans:900');
+ngb-carousel {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  outline: none;
+}
+ngb-carousel p {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+ngb-carousel img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  cursor: pointer;
+}
+ngb-carousel div {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+h1 {
+  margin: 20px;
+  font-family: 'Lato', sans-serif;
+}
+.card-small-box {
+  margin-bottom: 15px;
+}

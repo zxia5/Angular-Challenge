@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Work+Sans:900');
+.category-filter {
+  height: 84px;
+  margin-bottom: 20px;
+}
+h1 {
+  margin: 20px;
+  font-family: 'Lato', sans-serif;
+  display: inline-block;
+}
+.d-inline-block {
+  float: right;
+  margin: 25px 25px 0 0;
+}
+.d-inline-block .btn-outline-primary {
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  box-shadow: none;
+}
+.d-inline-block .btn-outline-primary:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+.d-inline-block .dropdown-item:active,
+.d-inline-block .dropdown-item:focus {
+  color: white;
+  background-color: black;
+  outline: none;
+}
+.d-inline-block .dropdown-item:hover {
+  cursor: pointer;
+}
+.card-small-box {
+  margin-bottom: 15px;
+}
