@@ -15,7 +15,7 @@
     <div class="col-sm-6 col-md-3 card-small-box" *ngFor="let article of articlesFromCategory | reverse:sortMode">
       <app-card-small (mouseup)="goTo(article.url)">
         <img
-          [src]="article.urlToImage? 'https://img.gs/pzcfdllptf/500x500,fit/'+article.urlToImage : 'http://thedailycougar.com/wp-content/uploads/2013/08/News.png'">
+          [src]="(article.urlToImage && article.urlToImage.startsWith('http')) ? ('https://img.gs/pzcfdllptf/300x300,fit/'+article.urlToImage) : 'http://thedailycougar.com/wp-content/uploads/2013/08/News.png'">
         <p>{{article.title}}</p>
       </app-card-small>
     </div>

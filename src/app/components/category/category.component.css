@@ -17,11 +17,11 @@ h1 {
   background-color: transparent;
   border-color: black;
   box-shadow: none;
+  cursor: pointer;
 }
 .d-inline-block .btn-outline-primary:hover {
   color: white;
   background-color: black;
-  cursor: pointer;
 }
 .d-inline-block .dropdown-item:active,
 .d-inline-block .dropdown-item:focus {

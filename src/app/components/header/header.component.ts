@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {DataService} from "../../services/data.service";
 
 @Component({
   selector: 'app-header',
@@ -20,7 +19,7 @@ export class HeaderComponent implements OnInit {
     {display:'technology', category: 'technology'}
   ];
 
-  constructor(private dataService: DataService) {
+  constructor() {
   }
 
   ngOnInit() {
