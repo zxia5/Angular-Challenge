@@ -6,6 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./header.component.less']
 })
 export class HeaderComponent implements OnInit {
+  menuOpen = false;
 
   categories = [
     {display:'general', category: 'general'},
