@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Work+Sans:900');
 :host /deep/ p {
   width: 90%;
-  font-family: 'Lato', sans-serif;
   font-size: 13px;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 120%;

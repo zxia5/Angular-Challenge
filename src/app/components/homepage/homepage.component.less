@@ -1,10 +1,15 @@
-@import '../../../fonts';
+@mobile: ~"only screen and (max-width: 768px)";
 
 ngb-carousel {
   width: 100%;
   height: 400px;
   overflow: hidden;
   outline: none;
+  transition: 0.4s;
+
+  h3 {
+    font-size: 1.5rem;
+  }
 
   p {
     text-overflow: ellipsis;
@@ -19,17 +24,40 @@ ngb-carousel {
     height: 400px;
     object-fit: cover;
     cursor: pointer;
+    transition: 0.4s;
   }
   div {
     background-color: rgba(0,0,0,0.4);
   }
+
+  @media @mobile {
+    height: 300px;
+    p {
+      font-size: 0.8rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    img {
+      height: 300px;
+    }
+  }
+
 }
 
 h1 {
   margin: 20px;
-  font-family: @paragraph;
+  transition:0.4s;
+
+  @media @mobile {
+    font-size:28px;
+  }
 }
 
 .card-small-box {
   margin-bottom: 15px;
+}
+
+.container {
+  transition: 0.4s;
 }

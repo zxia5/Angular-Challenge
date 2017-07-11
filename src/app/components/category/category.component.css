@@ -1,12 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Work+Sans:900');
 .category-filter {
   height: 84px;
   margin-bottom: 20px;
 }
 h1 {
   margin: 20px;
-  font-family: 'Lato', sans-serif;
   display: inline-block;
+  transition: 0.4s;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    padding-top: 8px;
+    font-size: 28px;
+  }
+}
+.container {
+  transition: 0.4s;
 }
 .d-inline-block {
   float: right;

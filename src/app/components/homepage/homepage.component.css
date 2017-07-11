@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Work+Sans:900');
 ngb-carousel {
   width: 100%;
   height: 400px;
   overflow: hidden;
   outline: none;
+  transition: 0.4s;
+}
+ngb-carousel h3 {
+  font-size: 1.5rem;
 }
 ngb-carousel p {
   text-overflow: ellipsis;
@@ -17,14 +20,37 @@ ngb-carousel img {
   height: 400px;
   object-fit: cover;
   cursor: pointer;
+  transition: 0.4s;
 }
 ngb-carousel div {
   background-color: rgba(0, 0, 0, 0.4);
 }
+@media only screen and (max-width: 768px) {
+  ngb-carousel {
+    height: 300px;
+  }
+  ngb-carousel p {
+    font-size: 0.8rem;
+  }
+  ngb-carousel h3 {
+    font-size: 1.2rem;
+  }
+  ngb-carousel img {
+    height: 300px;
+  }
+}
 h1 {
   margin: 20px;
-  font-family: 'Lato', sans-serif;
+  transition: 0.4s;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
 }
 .card-small-box {
   margin-bottom: 15px;
+}
+.container {
+  transition: 0.4s;
 }

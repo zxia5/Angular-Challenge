@@ -1,6 +1,12 @@
 <div id="banner">
   <a id="site" routerLink='/'>News</a>
+  <div id="hamburger" [ngClass] = "{'menu-open' : menuOpen}" (click)="menuOpen = !menuOpen;"><i class="fa fa-bars"></i></div>
 </div>
 <div id="nav-bar">
   <a *ngFor="let cat of categories" [routerLink]="cat.category">{{cat.display}}</a>
+</div>
+<div id="nav-menu" [ngClass] = "{'menu-open' : menuOpen}">
+  <ul>
+    <li *ngFor="let cat of categories"><a  [routerLink]="cat.category" (click)="menuOpen = false">{{cat.display}}</a></li>
+  </ul>
 </div>

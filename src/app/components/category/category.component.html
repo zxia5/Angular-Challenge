@@ -1,9 +1,9 @@
 <div class="category-filter">
 
-  <h1>{{currentCategory | titlecase}} News</h1>
+  <h1>{{currentCategory | titlecase}}</h1>
 
   <div ngbDropdown class="d-inline-block">
-    <button class="btn btn-outline-primary" ngbDropdownToggle>Sort: {{sortMode}}</button>
+    <button class="btn btn-outline-primary" ngbDropdownToggle>{{sortMode}}</button>
     <div class="dropdown-menu">
       <button class="dropdown-item" (click)="sortMode = 'Top To Bottom'">Top To Bottom</button>
       <button class="dropdown-item" (click)="sortMode = 'Bottom To Top'">Bottom To Top</button>

@@ -1,4 +1,4 @@
-@import '../../../fonts';
+@mobile: ~"only screen and (max-width: 768px)";
 
 .category-filter {
   height:84px;
@@ -7,8 +7,17 @@
 
 h1 {
   margin: 20px;
-  font-family: @paragraph;
   display: inline-block;
+  transition:0.4s;
+
+  @media @mobile {
+    padding-top: 8px;
+    font-size:28px;
+  }
+}
+
+.container {
+  transition: 0.4s;
 }
 
 .d-inline-block {
